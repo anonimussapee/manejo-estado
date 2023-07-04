@@ -7,13 +7,20 @@ const App = () => {
 
 
   return (
-    <section className='w-[100%] h-[100vh] bg-gray-200 flex flex-col justify-center items-center relative'>
+    <>
+     <h1 className='text-[2rem] fixed top-0 z-10 w-[100%] h-[3.3rem] bg-gray-500 text-center text-white'>Manejo del estado profesional<FaceSmileIcon className='w-12 h-12 inline'/> </h1>
+    <section className='w-[100%] h-[100%] bg-gray-200 text-center mt-[3rem] overflow-y-scroll  '>
 
-    <h1 className='text-[2.5rem] absolute top-4 '>Manejo del estado profesional<FaceSmileIcon className='w-12 h-12 inline'/> </h1>
-    <UseState name=" UseState "/>
-    <div className='w-[100%] h-1 bg-gray-800'></div>
-    <ClassState name=" ClassState "/>
+    
+    <div className='w-[100%] flex flex-col justify-center items-center'>
+      <UseState name=" UseState "/>
+      <div className='w-[100%] h-1 bg-gray-800'></div>
+      <ClassState name=" ClassState "/>
+    </div>
+    
     </section>
+    </>
+   
   );
 
 }
